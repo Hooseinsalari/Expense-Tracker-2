@@ -4,40 +4,95 @@
     box-sizing: border-box;
 }
 
-body {
-    position: relative;
-    min-width: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-.sideBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 240px;
+.container, .close {
     background-color: #11101d;
-    padding: 6px 14px;
+    width: 16rem;
+    height: 90vh    ;
+    color: aliceblue;
+    /* margin: 10px 20px; */
+    border-radius: 20px;
+    transition: 0.5s;
+    position: fixed;
+    overflow-y: scroll;
 }
 
-.sideBar .logoContent .logo {
-    color: #fff;
+.container::-webkit-scrollbar,
+.close::-webkit-scrollbar {
+    display: none;
+}
+
+.close {
+    width: 3rem;
+}
+
+.navHead {
     display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
 }
 
-.sideBar .menu {
-    position: absolute;
-    color: #fff;
-    left: 90%;
-    top: 6px;
-    font-size: 20px;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 50px;
-    transform: translateX(-50%);
+.headNameClose {
+    display: none;
 }
+
+.navHead .menu {
+    width: 22px;
+}
+
+.navLinks {
+    /* margin: 40px  0 50px; */
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.openLink , .closeLink {
+    display: flex;
+    align-items: center;
+    margin: 10px 2px;
+    cursor: pointer;
+    list-style-type: none;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.openLink a {
+    text-decoration: none;
+    color: white;
+    margin-left: 14px;
+}
+
+.closeLink a {
+    display: none;
+}
+
+.openLink img , .closeLink img {
+    width: 22px;
+}
+
+.navLinks li:hover , .navFooter:hover , .closeLink:hover {
+    background-color: rgb(27, 130, 219);
+    border-radius: 20px;
+    color: black;
+}
+
+.navFooter {
+    display: flex;
+    align-items: center;
+    margin: 10px 2px;
+    cursor: pointer;
+    list-style-type: none;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.navFooter a {
+    text-decoration: none;
+    color: white;
+    margin-left: 14px;
+}
+
+.navFooter img {
+    width: 22px;
+}
+
