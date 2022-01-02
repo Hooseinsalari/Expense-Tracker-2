@@ -4,6 +4,7 @@ import './App.css';
 // components
 import Navbar from './components/Navbar';
 import ExpenseApp from './components/ExpenseApp';
+import Cart from './components/Cart';
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
         </div>
         <div className='route'>
           <Route path="/" component={ExpenseApp} /> 
+        </div>
+        <div>
+          <Cart />
         </div>
     </div>
   );

@@ -7,13 +7,15 @@
 .container, .close {
     background-color: #11101d;
     width: 16rem;
-    height: 90vh    ;
+    height: 100vh;
     color: aliceblue;
+    border-radius: 0 20px 0 0;
     /* margin: 10px 20px; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     transition: 0.5s;
     position: fixed;
     overflow-y: scroll;
+    align-items: flex-start;
 }
 
 .container::-webkit-scrollbar,
@@ -96,3 +98,8 @@
     width: 22px;
 }
 
+/* @media screen and (max-width: 1300px) {
+    .navHead .menu {
+        visibility: visible;
+    }
+} */

@@ -1,9 +1,14 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  align-items: stretch
+}
 
-.navbar {
+/* .navbar {
   position: fixed;
   top: 20px;
   left: 20px;
-}
+} */
