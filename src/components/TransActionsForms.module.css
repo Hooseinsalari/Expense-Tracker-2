@@ -1,0 +1,77 @@
+.container {
+    background-color: #DFE4F6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.inputForm {
+    margin: 40px 0 10px;
+    position: relative;
+}
+
+.input {
+    padding: 5px;
+    width: 18rem;
+}
+
+.input[type="text"],
+[type="number"] {
+    font-size: 16px;
+}
+
+.label {
+    position: absolute;
+    bottom: 30px;
+    font-size: 18px;
+}
+
+.radioForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10rem;
+    margin: auto;
+}
+
+.date {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* CSS */
+.subBtn {
+  background-color: #0a6bff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 20px;
+  min-height: 26px;
+  min-width: 50px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.subBtn:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+/* @media (min-width: 768px) {
+  .subBtn {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+} */

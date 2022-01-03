@@ -8,6 +8,7 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
     desc: "",
     amount: 0,
     type: "expense",
+    date: ""
   });
 
   const formHandler = (event) => {
@@ -16,13 +17,13 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    // console.log(inputData);
-    setTransActions([...transActions, inputData]);
+    setTransActions([...transActions, inputData ]);
     setInputData({ desc: "", amount: 0, type: "expense" });
   };
+
   return (
     <form className={styles.container} onSubmit={submitHandler}>
-      <div className={styles.textForm}>
+      <div className={styles.inputForm}>
         <label className={styles.label}>Text</label>
         <input
           type="text"
@@ -33,7 +34,7 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
           required
         />
       </div>
-      <div className={styles.amountForm}>
+      <div className={styles.inputForm}>
         <label className={styles.label}>Amount</label>
         <input
           type="number"
@@ -45,26 +46,33 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
         />
       </div>
       <div className={styles.radioForm}>
-        <label>Expense</label>
-        <input
-          type="radio"
-          name="type"
-          value="expense"
-          checked={inputData.type === "expense"}
-          onChange={formHandler}
-          required
-        />
-        <label>Income</label>
-        <input
-          type="radio"
-          name="type"
-          value="income"
-          checked={inputData.type === "income"}
-          onChange={formHandler}
-          required
-        />
+        <div className={styles.radio}>
+          <input
+            type="radio"
+            name="type"
+            value="expense"
+            checked={inputData.type === "expense"}
+            onChange={formHandler}
+            required
+          />
+          <label>Expense</label>
+        </div>
+        <div className={styles.radio}>
+          <input
+            type="radio"
+            name="type"
+            value="income"
+            checked={inputData.type === "income"}
+            onChange={formHandler}
+            required
+          />
+          <label>Income</label>
+        </div>
       </div>
-      <button type="submit">Add</button>
+      <div className={styles.date}>
+          <input type="date" name="date" onChange={formHandler}  />
+      </div>
+      <button className={styles.subBtn} type="submit">Add</button>
     </form>
   );
 };

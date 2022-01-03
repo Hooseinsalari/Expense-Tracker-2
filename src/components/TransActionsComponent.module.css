@@ -1,0 +1,100 @@
+.container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+}
+
+.expenseContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 27rem;
+    border-right: 4px solid red;
+}
+
+
+.incomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 27rem;
+    border-right: 4px solid green;
+}
+
+.expenseContainer p , .incomeContainer p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 5rem;
+    text-align: left;
+}
+
+.incContainer , .expContainer {
+    background-color: #DFE4F6;
+    margin: 20px 0 10px;
+    width: 30rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.expHead , .incHead {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.incHead {
+    text-decoration: solid green underline;
+}
+
+.expHead {
+    text-decoration: solid red underline;
+}
+
+.emptyAlert {
+    text-align: center;
+    margin: 10px 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+img {
+    width: 18px;
+    cursor: pointer;
+}
+
+/* tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.incomeContainer:hover .tooltiptext {
+   visibility: visible;
+}

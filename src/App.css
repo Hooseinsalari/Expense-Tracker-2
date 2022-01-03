@@ -1,14 +1,18 @@
 .App {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
-  align-items: stretch
+  align-items: stretch;
 }
+
+/* .main {
+  display: flex;
+  width: 40rem;
+  align-items: stretch;
+  margin: auto;
+} */
 
 /* .navbar {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  
 } */

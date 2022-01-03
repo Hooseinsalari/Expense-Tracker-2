@@ -19,7 +19,6 @@ const Navbar = () => {
 
     const menuHandler = () => {
         setIsShow((prevState) => !prevState)
-        console.log(isShow)
     }
 
   return (
