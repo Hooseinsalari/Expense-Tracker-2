@@ -5,6 +5,7 @@
     justify-content: space-between;
     flex-direction: column-reverse;
     margin-bottom: 30px;
+    transition: 0.5s;
 }
 
 .expenseContainer {
@@ -30,6 +31,7 @@
     background-color: #fff;
     width: 27rem;
     border-right: 4px solid green;
+    border-left: 4px solid green;
 }
 
 .expenseContainer p , .incomeContainer p {
@@ -40,11 +42,12 @@
 }
 
 .incContainer , .expContainer {
-    background-color: #DFE4F6;
+    background-color: #ececec;
     margin: 20px 0 10px;
     width: 30rem;
     border-radius: 10px;
     padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .expHead , .incHead {
@@ -88,13 +91,21 @@ img {
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
-  
+    padding: 5px 0;  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
 
+.tooltip .tooltiptext {
+    top: -5px;
+    left: 105%;
+  }
+
 .incomeContainer:hover .tooltiptext {
    visibility: visible;
 }
+
+.expenseContainer:hover .tooltiptext {
+    visibility: visible;
+ }

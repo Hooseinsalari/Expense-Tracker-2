@@ -6,34 +6,89 @@
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* -------------- card ----------------- */
 .balance {
-    background-color: #fff;
-    width: 10rem;
+    /* background-color: #11101d; */
+    background: rgb(0,7,36);
+background: linear-gradient(140deg, rgba(0,7,36,1) 16%, rgba(27,23,68,1) 53%, rgba(29,111,128,1) 100%);
+    width: 22rem;
+    height: 11rem;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.balance .upSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle {
+    display: flex;
+}
+
+.balance .upSection .circle .firstCircle {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+}
+
+.balance .upSection .circle .secondCircle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 50%;
+}
+
+.mainSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.downSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
 }
 
 .balance p {
     font-size: 22px;
 }
 
+
 .amount {
     display: flex;
     align-items: center;
-    justify-content: space-around ;
-    width: 20rem;
-    margin: auto;
+    justify-content: space-between ;
+    width: 21rem;
 }
 
 .amount p {
-    background-color: #fff;
-    margin: 10px;
-    padding: 14px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
+}
+
+.incomeSection , .expenseSection {
+    display: flex;
+}
+
+.incomeSection img , .expenseSection img{
+    width: 16px;
+    margin-right: 5px;
 }
 
 .addBtn {

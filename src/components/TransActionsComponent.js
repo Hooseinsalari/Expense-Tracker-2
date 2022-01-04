@@ -40,6 +40,9 @@ const TransActionsComponent = ({ transActions, setTransActions }) => {
               <p className={styles.transAmount}>${t.amount}</p>
               <p className={styles.transType}>{t.type}</p>
               <button onClick={() => deleteHandler(t.id)}><img src={trash} alt="logo" /></button>
+              <div className={styles.tooltip}>
+                <span className={styles.tooltiptext}>{t.date}</span>
+              </div>
             </div>
           ))
         ) : (

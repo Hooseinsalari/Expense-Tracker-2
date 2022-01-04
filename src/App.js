@@ -4,7 +4,8 @@ import './App.css';
 // components
 import Navbar from './components/Navbar';
 import ExpenseApp from './components/ExpenseApp';
-import Cart from './components/Cart';
+import About from './components/About';
+import Chart from './components/Chart';
 
 function App() {
 
@@ -13,11 +14,14 @@ function App() {
         <div className='navbar'>
           <Navbar />
         </div>
+        <div>
+          <Chart />
+        </div>
         <div className='route'>
           <Route path="/" component={ExpenseApp} /> 
         </div>
         <div>
-          <Cart />
+          <About />
         </div>
     </div>
   );

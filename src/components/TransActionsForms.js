@@ -4,23 +4,31 @@ import React, { useState } from "react";
 import styles from "./TransActionsForms.module.css";
 
 const TransActionsForms = ({ transActions, setTransActions }) => {
+  // const [date, setDate] = useState("");
+  // date of day
+  const utc = new Date().toJSON().slice(0,10).replace(/-/g,'-').toString();
   const [inputData, setInputData] = useState({
     desc: "",
     amount: 0,
     type: "expense",
-    date: ""
+    date: utc
   });
 
   const formHandler = (event) => {
     setInputData({ ...inputData, [event.target.name]: event.target.value });
   };
 
+  // const dateHandler = (event) => {
+  //   setDate(date === null ? utc : event.target.value)
+  // }
+
   const submitHandler = (event) => {
     event.preventDefault();
     setTransActions([...transActions, inputData ]);
     setInputData({ desc: "", amount: 0, type: "expense" });
   };
-
+  
+  // console.log(typeof(utc))
   return (
     <form className={styles.container} onSubmit={submitHandler}>
       <div className={styles.inputForm}>
@@ -70,7 +78,7 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
         </div>
       </div>
       <div className={styles.date}>
-          <input type="date" name="date" onChange={formHandler}  />
+          <input type="date" name="date" value={inputData.date} onChange={formHandler}  />
       </div>
       <button className={styles.subBtn} type="submit">Add</button>
     </form>

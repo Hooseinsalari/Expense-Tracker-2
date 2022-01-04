@@ -1,10 +1,13 @@
 .container {
-    background-color: #DFE4F6;
+    /* background-color: #dfe4f6; */
+    background: rgb(169,188,208);
+background: linear-gradient(125deg, rgba(169,188,208,1) 12%, rgba(146,190,218,1) 48%, rgba(89,165,216,1) 82%);
     border-radius: 10px;
     padding: 20px;
     margin-top: 25px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-
 .inputForm {
     margin: 40px 0 10px;
     position: relative;

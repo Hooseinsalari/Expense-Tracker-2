@@ -16,6 +16,7 @@
     position: fixed;
     overflow-y: scroll;
     align-items: flex-start;
+    z-index: 10;
 }
 
 .container::-webkit-scrollbar,
@@ -46,6 +47,7 @@
     font-size: 18px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .openLink , .closeLink {
