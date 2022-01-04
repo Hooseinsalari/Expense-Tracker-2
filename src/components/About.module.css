@@ -41,3 +41,9 @@
     justify-content: space-evenly;
     width: 15rem;
 }
+
+@media (max-width: 375px) {
+    .container {
+        width: 15em;
+    }
+}

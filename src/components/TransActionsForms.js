@@ -6,12 +6,11 @@ import styles from "./TransActionsForms.module.css";
 const TransActionsForms = ({ transActions, setTransActions }) => {
   // const [date, setDate] = useState("");
   // date of day
-  const utc = new Date().toJSON().slice(0,10).replace(/-/g,'-').toString();
+  // const utc = new Date().toJSON().slice(0,10).replace(/-/g,'-').toString();
   const [inputData, setInputData] = useState({
     desc: "",
     amount: 0,
     type: "expense",
-    date: utc
   });
 
   const formHandler = (event) => {
@@ -77,9 +76,9 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
           <label>Income</label>
         </div>
       </div>
-      <div className={styles.date}>
+      {/* <div className={styles.date}>
           <input type="date" name="date" value={inputData.date} onChange={formHandler}  />
-      </div>
+      </div> */}
       <button className={styles.subBtn} type="submit">Add</button>
     </form>
   );

@@ -18,6 +18,7 @@
     background-color: #fff;
     width: 27rem;
     border-right: 4px solid red;
+    border-left: 4px solid red;
 }
 
 
@@ -148,6 +149,6 @@ img {
     }
 
     .expenseContainer , .incomeContainer {
-        width: 13rem;
+        width: 15rem;
     }
 }

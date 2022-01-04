@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 // components
@@ -14,7 +14,7 @@ function App() {
           <Navbar />
         </div>
         <div className='route'>
-          {/* <Route path="/about" component={About} /> */}
+          <Route path="/about" component={About} />
           <Route path="/" component={ExpenseApp} exact /> 
         </div>
     </div>

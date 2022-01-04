@@ -1,6 +1,5 @@
 .container {
     text-align: center;
-    transition: 1.5s;
     background-color: #ECECEC;
     width: 30rem;
     padding: 20px;
@@ -197,18 +196,23 @@ transform: translateY(-2px);
     }
 
     .balance {
-        width: 14rem;
+        width: 15rem;
+        margin: -10px;
     }
 
     .balance p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .balance h3 {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .balance .amount {
-        width: 13rem;
+        width: 14rem;
+    }
+
+    .addBtn {
+        margin-top: 33px;
     }
 }
