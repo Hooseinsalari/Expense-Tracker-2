@@ -14,9 +14,7 @@ function App() {
         <div className='navbar'>
           <Navbar />
         </div>
-        <div>
-          <Chart />
-        </div>
+        
         <div className='route'>
           <Route path="/" component={ExpenseApp} /> 
         </div>

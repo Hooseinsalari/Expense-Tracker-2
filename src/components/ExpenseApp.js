@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 // components
 import TransActionsForms from "./TransActionsForms";
+import Chart from "./Chart";
 
 // styles
 import TransActionsComponent from "./TransActionsComponent";
@@ -95,6 +96,11 @@ const ExpenseApp = () => {
             />
           )}
         </div>
+      </div>
+      <div>
+          {
+            transActions.length ? <Chart income={income} expense={expense} /> : null
+          }
       </div>
       <div>
         <TransActionsComponent
