@@ -7,7 +7,7 @@
 .container, .close {
     background-color: #11101d;
     width: 16rem;
-    height: 100vh;
+    height: 100%;
     color: aliceblue;
     border-radius: 0 20px 0 0;
     /* margin: 10px 20px; */
@@ -16,7 +16,9 @@
     position: fixed;
     overflow-y: scroll;
     align-items: flex-start;
-    /* z-index: 10; */
+    z-index: 10;
+    top: 0;
+    left: 0;
 }
 
 .container::-webkit-scrollbar,
@@ -114,3 +116,43 @@
         visibility: visible;
     }
 } */
+
+.littleMenuContainer {
+    visibility: hidden;
+}
+
+/* @media screen and (max-width: 569px) {
+    .container, .close {
+        top: 0;
+        height: 100%;
+    }
+
+    .close {
+        width: 0rem;
+    }
+
+
+    .close .navLinks {
+        display: none;
+    }
+
+    .closeLink {
+        display: none;
+    }
+
+    .littleMenuContainer {
+        background-color: #11101d;
+        padding: 13px;
+        height: 3rem;
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* width: 100%; */
+    /* }
+
+    .headtitle {
+        color: #fff;
+    }
+
+} */ 

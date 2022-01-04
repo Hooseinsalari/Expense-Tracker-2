@@ -1,8 +1,7 @@
 .App {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: center;
 }
 
 /* .main {
@@ -13,10 +12,14 @@
 } */
 
 .route {
-  margin: auto;
+  margin-right: 20px;
 }
 
-.navbar {
-   /* position: fixed; */
-   text-align: left;
-}
+
+/* @media screen and (max-width: 569px) {
+  .App {
+    flex-direction: column;
+  }
+  
+ 
+} */

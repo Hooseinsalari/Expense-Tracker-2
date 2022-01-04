@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./About.module.css";
 
 // img
-import logo from "../img/logo.jpg";
+// import logo from "../img/logo.jpg";
 
 // svg
 import linkedin from "../svg/linkedin.svg";
@@ -16,7 +16,7 @@ const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.head}>
-        <img src={logo} className={styles.logo} />
+        <img src={phone} className={styles.logo} />
         <p className={styles.name}>Hossein Salari</p>
         <p className={styles.lorem}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent

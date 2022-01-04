@@ -65,7 +65,7 @@
 
 .emptyAlert {
     text-align: center;
-    margin: 10px 0;
+    /* margin: 10px 0; */
 }
 
 button {
@@ -79,12 +79,12 @@ img {
 }
 
 /* tooltip */
-.tooltip {
+/* .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
-}
-.tooltip .tooltiptext {
+} */
+/* .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -92,12 +92,11 @@ img {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;  
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
-}
+} */
 
-.tooltip .tooltiptext {
+/* .tooltip .tooltiptext {
     top: -5px;
     left: 105%;
   }
@@ -108,4 +107,47 @@ img {
 
 .expenseContainer:hover .tooltiptext {
     visibility: visible;
- }
+} */
+
+
+/* responsive */
+
+@media (max-width: 587px) {
+    .expContainer , .incContainer {
+        width: 25rem;
+    }
+
+    .expenseContainer , .incomeContainer {
+        width: 23rem;
+    }
+}
+
+@media (max-width: 465px) {
+    .expContainer , .incContainer {
+        width: 20rem;
+    }
+
+    .expenseContainer , .incomeContainer {
+        width: 17rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .expContainer , .incContainer {
+        width: 17rem;
+    }
+
+    .expenseContainer , .incomeContainer {
+        width: 14rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .expContainer , .incContainer {
+        width: 16rem;
+    }
+
+    .expenseContainer , .incomeContainer {
+        width: 13rem;
+    }
+}

@@ -1,7 +1,7 @@
 .container {
     /* background-color: #dfe4f6; */
     background: rgb(169,188,208);
-background: linear-gradient(125deg, rgba(169,188,208,1) 12%, rgba(146,190,218,1) 48%, rgba(89,165,216,1) 82%);
+    background: linear-gradient(125deg, rgba(169,188,208,1) 12%, rgba(146,190,218,1) 48%, rgba(89,165,216,1) 82%);
     border-radius: 10px;
     padding: 20px;
     margin-top: 25px;
@@ -16,11 +16,15 @@ background: linear-gradient(125deg, rgba(169,188,208,1) 12%, rgba(146,190,218,1)
 .input {
     padding: 5px;
     width: 18rem;
+    border-radius: 10px;
+    border: 2px solid #0a6bff;
+    outline: none;
 }
 
 .input[type="text"],
 [type="number"] {
     font-size: 16px;
+    height: 30px;
 }
 
 .label {
@@ -78,3 +82,24 @@ background: linear-gradient(125deg, rgba(169,188,208,1) 12%, rgba(146,190,218,1)
     min-width: 150px;
   }
 } */
+
+
+/* responsive */
+
+@media (max-width: 465px) {
+  .input {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .input {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .input {
+    width: 11rem;
+  }
+}

@@ -97,12 +97,12 @@ const ExpenseApp = () => {
           )}
         </div>
       </div>
-      <div>
+      <div className={styles.chart}>
           {
             transActions.length ? <Chart income={income} expense={expense} /> : null
           }
       </div>
-      <div>
+      <div className={styles.transComponent}>
         <TransActionsComponent
           transActions={transActions}
           saveData={saveData}

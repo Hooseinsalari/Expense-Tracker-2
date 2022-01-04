@@ -5,16 +5,19 @@
     width: 30rem;
     padding: 20px;
     border-radius: 10px;
+    margin: auto;
     margin-top: 20px;
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-sizing: border-box;
 }
 
 /* -------------- card ----------------- */
+
 .balance {
     /* background-color: #11101d; */
     background: rgb(0,7,36);
-background: linear-gradient(140deg, rgba(0,7,36,1) 16%, rgba(27,23,68,1) 53%, rgba(29,111,128,1) 100%);
+    background: linear-gradient(140deg, rgba(0,7,36,1) 16%, rgba(27,23,68,1) 53%, rgba(29,111,128,1) 100%);
     width: 22rem;
     height: 11rem;
     margin: auto;
@@ -124,3 +127,88 @@ transform: translateY(-2px);
 .transForm {
     margin-top: 20px;
 }   
+
+.chart {
+    background-color: #ececec;
+    /* margin: 20px 0; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 30rem;
+}
+
+/* responsive */
+
+@media (max-width: 587px) {
+    .container , .chart, .transComponent {
+        width: 25rem;
+    }   
+}
+
+@media (max-width: 465px) {
+    .container , .chart, .transComponent {
+        width: 20rem;
+    }
+
+    .balance {
+        width: 17rem;
+    }
+
+    .balance p {
+        font-size: 16px;
+    }
+
+    .balance h3 {
+        font-size: 17px;
+    }
+
+    .balance .amount {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .container , .chart, .transComponent {
+        width: 17rem;
+    }
+
+    .balance {
+        width: 15rem;
+    }
+
+    .balance p {
+        font-size: 14px;
+    }
+
+    .balance h3 {
+        font-size: 14px;
+    }
+
+    .balance .amount {
+        width: 14rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .container , .chart, .transComponent {
+        width: 16rem;
+    }
+
+    .balance {
+        width: 14rem;
+    }
+
+    .balance p {
+        font-size: 13px;
+    }
+
+    .balance h3 {
+        font-size: 13px;
+    }
+
+    .balance .amount {
+        width: 13rem;
+    }
+}
