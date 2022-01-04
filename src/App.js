@@ -5,7 +5,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import ExpenseApp from './components/ExpenseApp';
 import About from './components/About';
-import Chart from './components/Chart';
 
 function App() {
 
@@ -16,11 +15,12 @@ function App() {
         </div>
         
         <div className='route'>
-          <Route path="/" component={ExpenseApp} /> 
+          <Route path="/about" component={About} />
+          <Route path="/" component={ExpenseApp} exact /> 
         </div>
-        <div>
+        {/* <div>
           <About />
-        </div>
+        </div> */}
     </div>
   );
 }

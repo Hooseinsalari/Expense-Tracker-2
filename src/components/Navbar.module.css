@@ -16,7 +16,7 @@
     position: fixed;
     overflow-y: scroll;
     align-items: flex-start;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .container::-webkit-scrollbar,
@@ -40,6 +40,7 @@
 
 .navHead .menu {
     width: 22px;
+    /* margin-left: 40px; */
 }
 
 .navLinks {
@@ -66,8 +67,16 @@
     margin-left: 14px;
 }
 
+.openLink .imgLink {
+    margin-left: 0;
+}
+
 .closeLink a {
     display: none;
+}
+
+.closeLink .imgLink {
+    display: flex;
 }
 
 .openLink img , .closeLink img {

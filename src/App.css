@@ -12,7 +12,11 @@
   margin: auto;
 } */
 
-/* .navbar {
-  position: fixed;
-  
-} */
+.route {
+  margin: auto;
+}
+
+.navbar {
+   /* position: fixed; */
+   text-align: left;
+}

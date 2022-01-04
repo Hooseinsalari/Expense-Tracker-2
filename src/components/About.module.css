@@ -1,0 +1,43 @@
+.container {
+    background-color: #11101d;
+    padding: 10px;
+    margin-top: 100px;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.head .name {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.head .lorem {
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15rem;
+}

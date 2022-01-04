@@ -30,23 +30,23 @@ const Navbar = () => {
         
         <ul className={styles.navLinks}>
             <li className={isShow ? styles.openLink : styles.closeLink}>
-                <img src={home} />
+                <Link to="/" className={styles.imgLink}><img src={home} /></Link>
                 <Link to="/" >Home</Link>
             </li>
             <li className={isShow ? styles.openLink : styles.closeLink}>
-                <img src={pie} />
+                <Link to="/" className={styles.imgLink}><img src={pie} /></Link>
                 <Link to="/" >Analize</Link>
             </li>
             <li className={isShow ? styles.openLink : styles.closeLink}>
-                <img src={dash} />
+                <Link to="/" className={styles.imgLink}><img src={dash} /></Link>
                 <Link to="/">Dashboard</Link>
             </li>
             <li className={isShow ? styles.openLink : styles.closeLink}>
-                <img src={about} />
-                <Link to="/">About</Link>
+                <Link to="/about" className={styles.imgLink}><img src={about} /></Link>
+                <Link to="/about">About</Link>
             </li>
-            <li className={isShow ? styles.openLink : styles.closeLink}>
-                <img src={cog} />
+            <li className={isShow ? styles.openLink : styles.closeLink} >
+                <Link to="/" className={styles.imgLink}><img src={cog} /></Link>
                 <Link to="/">Setting</Link>
             </li>
         </ul>
