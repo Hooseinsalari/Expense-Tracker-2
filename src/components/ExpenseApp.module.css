@@ -166,6 +166,15 @@ transform: translateY(-2px);
     .balance .amount {
         width: 16rem;
     }
+
+    .incomeSection , .expenseSection {
+        width: 7rem;
+    }
+
+    .incomeSection img , .expenseSection img {
+        width: 13px;
+        margin-right: 2px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -188,6 +197,15 @@ transform: translateY(-2px);
     .balance .amount {
         width: 14rem;
     }
+
+    .incomeSection , .expenseSection {
+        width: 6rem;
+    }
+
+    .incomeSection img , .expenseSection img {
+        width: 13px;
+        margin-right: 2px;
+    }
 }
 
 @media (max-width: 330px) {
@@ -196,8 +214,8 @@ transform: translateY(-2px);
     }
 
     .balance {
-        width: 15rem;
-        margin: -10px;
+        width: 15.5rem;
+        margin: -16px;
     }
 
     .balance p {
@@ -215,4 +233,14 @@ transform: translateY(-2px);
     .addBtn {
         margin-top: 33px;
     }
+
+    .incomeSection , .expenseSection {
+        width: 6rem;
+    }
+
+    .incomeSection img , .expenseSection img {
+        width: 12px;
+    }
+
+   
 }

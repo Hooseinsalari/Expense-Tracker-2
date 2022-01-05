@@ -3,6 +3,9 @@ import React, { useState } from "react";
 // style
 import styles from "./TransActionsForms.module.css";
 
+
+import { notify } from "./toastify/toast";
+
 const TransActionsForms = ({ transActions, setTransActions }) => {
   // const [date, setDate] = useState("");
   // date of day
@@ -23,7 +26,12 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    setTransActions([...transActions, inputData ]);
+    if(inputData.desc && inputData.amount ) {
+      notify("success", "good")
+      setTransActions([...transActions, inputData ]);
+    } else {
+      notify("error", "bad")
+    }
     setInputData({ desc: "", amount: 0, type: "expense" });
   };
   
@@ -38,7 +46,7 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
           value={inputData.desc}
           className={styles.input}
           onChange={formHandler}
-          required
+          
         />
       </div>
       <div className={styles.inputForm}>
@@ -49,7 +57,7 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
           value={inputData.amount}
           className={styles.input}
           onChange={formHandler}
-          required
+          
         />
       </div>
       <div className={styles.radioForm}>
@@ -60,7 +68,7 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
             value="expense"
             checked={inputData.type === "expense"}
             onChange={formHandler}
-            required
+            
           />
           <label>Expense</label>
         </div>
@@ -71,7 +79,7 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
             value="income"
             checked={inputData.type === "income"}
             onChange={formHandler}
-            required
+            
           />
           <label>Income</label>
         </div>

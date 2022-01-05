@@ -6,6 +6,10 @@ import Navbar from './components/Navbar';
 import ExpenseApp from './components/ExpenseApp';
 import About from './components/About';
 
+// toast
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 
   return (
@@ -17,6 +21,8 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/" component={ExpenseApp} exact /> 
         </div>
+      <ToastContainer />
+
     </div>
   );
 }

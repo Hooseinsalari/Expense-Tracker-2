@@ -12,6 +12,9 @@ import styles from "./ExpenseApp.module.css";
 import arrowDown from "../svg/arrow-down.svg";
 import arrowUp from "../svg/arrow-up.svg";
 
+
+
+
 const ExpenseApp = () => {
   const [expense, setExpense] = useState(0);
   const [income, setIncome] = useState(0);
@@ -109,6 +112,7 @@ const ExpenseApp = () => {
           setTransActions={setTransActions}
         />
       </div>
+      
     </>
   );
 };

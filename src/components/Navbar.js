@@ -23,10 +23,6 @@ const Navbar = () => {
 
   return (
     <div className={styles.main}>
-        <section className={styles.littleMenuContainer}>
-         <img src={bars} onClick={menuHandler} className={styles.littleMenu} />
-         <h3 className={isShow ? styles.headtitle : styles.headtitle}>Expense Tracker</h3>
-        </section>
         <section className={isShow ? styles.container : styles.close}>
             <div className={styles.navHead}>
                 <h3 className={isShow ? styles.headNameOpen : styles.headNameClose}>Expense Tracker</h3>
