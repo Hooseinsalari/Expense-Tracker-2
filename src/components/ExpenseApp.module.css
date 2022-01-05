@@ -1,246 +1,265 @@
 .container {
-    text-align: center;
-    background-color: #ECECEC;
-    width: 30rem;
-    padding: 20px;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 20px;
-    color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    box-sizing: border-box;
+  text-align: center;
+  background-color: #ececec;
+  width: 30rem;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-sizing: border-box;
 }
 
 /* -------------- card ----------------- */
 
 .balance {
-    /* background-color: #11101d; */
-    background: rgb(0,7,36);
-    background: linear-gradient(140deg, rgba(0,7,36,1) 16%, rgba(27,23,68,1) 53%, rgba(29,111,128,1) 100%);
-    width: 22rem;
-    height: 11rem;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;  
-    justify-content: space-between;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background: rgb(0, 7, 36);
+  background: linear-gradient(
+    140deg,
+    rgba(0, 7, 36, 1) 16%,
+    rgba(27, 23, 68, 1) 53%,
+    rgba(29, 111, 128, 1) 100%
+  );
+  width: 22rem;
+  height: 11rem;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .balance .upSection {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .circle {
-    display: flex;
+  display: flex;
 }
 
 .balance .upSection .circle .firstCircle {
-    width: 20px;
-    height: 20px;
-    background-color: orange;
-    border-radius: 50%;
-    position: relative;
-    left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  position: relative;
+  left: 10px;
 }
 
 .balance .upSection .circle .secondCircle {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(255, 94, 0);
-    border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 94, 0);
+  border-radius: 50%;
 }
 
 .mainSection {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .downSection {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5px;
 }
 
 .balance p {
-    font-size: 22px;
+  font-size: 22px;
 }
 
-
 .amount {
-    display: flex;
-    align-items: center;
-    justify-content: space-between ;
-    width: 21rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 21rem;
 }
 
 .amount p {
-    font-size: 18px;
-    border-radius: 10px;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
-.incomeSection , .expenseSection {
-    display: flex;
+.incomeSection,
+.expenseSection {
+  display: flex;
 }
 
-.incomeSection img , .expenseSection img{
-    width: 16px;
-    margin-right: 5px;
+.incomeSection img,
+.expenseSection img {
+  width: 16px;
+  margin-right: 5px;
 }
 
 .addBtn {
-    background-color: #0a6bff;
-    border-radius: 4px;
-    border: 0;
-    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    margin-top: 20px;
-    min-height: 26px;
-    min-width: 50px;
-    position: relative;
-    text-align: center;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    transition: all .2s cubic-bezier(.22, .61, .36, 1);
-    padding: 5px;
+  background-color: #0a6bff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1, 60, 136, 0.5) 0 -1px 3px 0 inset,
+    rgba(0, 44, 97, 0.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 20px;
+  min-height: 26px;
+  min-width: 50px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  padding: 5px;
 }
-  
+
 .addBtn:hover {
-background-color: #065dd8;
-transform: translateY(-2px);
+  background-color: #065dd8;
+  transform: translateY(-2px);
 }
 
 .transForm {
-    margin-top: 20px;
-}   
+  margin-top: 20px;
+}
 
 .chart {
-    background-color: #ececec;
-    /* margin: 20px 0; */
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
-    width: 30rem;
+  background-color: #ececec;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 30rem;
 }
 
 /* responsive */
 
 @media (max-width: 587px) {
-    .container , .chart, .transComponent {
-        width: 25rem;
-    }   
+  .container,
+  .chart,
+  .transComponent {
+    width: 25rem;
+  }
 }
 
 @media (max-width: 465px) {
-    .container , .chart, .transComponent {
-        width: 20rem;
-    }
+  .container,
+  .chart,
+  .transComponent {
+    width: 20rem;
+  }
 
-    .balance {
-        width: 17rem;
-    }
+  .balance {
+    width: 17rem;
+  }
 
-    .balance p {
-        font-size: 16px;
-    }
+  .balance p {
+    font-size: 16px;
+  }
 
-    .balance h3 {
-        font-size: 17px;
-    }
+  .balance h3 {
+    font-size: 17px;
+  }
 
-    .balance .amount {
-        width: 16rem;
-    }
+  .balance .amount {
+    width: 16rem;
+  }
 
-    .incomeSection , .expenseSection {
-        width: 7rem;
-    }
+  .incomeSection,
+  .expenseSection {
+    width: 7rem;
+  }
 
-    .incomeSection img , .expenseSection img {
-        width: 13px;
-        margin-right: 2px;
-    }
+  .incomeSection img,
+  .expenseSection img {
+    width: 13px;
+    margin-right: 2px;
+  }
 }
 
 @media (max-width: 380px) {
-    .container , .chart, .transComponent {
-        width: 17rem;
-    }
+  .container,
+  .chart,
+  .transComponent {
+    width: 17rem;
+  }
 
-    .balance {
-        width: 15rem;
-    }
+  .balance {
+    width: 15rem;
+  }
 
-    .balance p {
-        font-size: 14px;
-    }
+  .balance p {
+    font-size: 14px;
+  }
 
-    .balance h3 {
-        font-size: 14px;
-    }
+  .balance h3 {
+    font-size: 14px;
+  }
 
-    .balance .amount {
-        width: 14rem;
-    }
+  .balance .amount {
+    width: 14rem;
+  }
 
-    .incomeSection , .expenseSection {
-        width: 6rem;
-    }
+  .incomeSection,
+  .expenseSection {
+    width: 6rem;
+  }
 
-    .incomeSection img , .expenseSection img {
-        width: 13px;
-        margin-right: 2px;
-    }
+  .incomeSection img,
+  .expenseSection img {
+    width: 13px;
+    margin-right: 2px;
+  }
 }
 
 @media (max-width: 330px) {
-    .container , .chart, .transComponent {
-        width: 16rem;
-    }
+  .container,
+  .chart,
+  .transComponent {
+    width: 16rem;
+  }
 
-    .balance {
-        width: 15.5rem;
-        margin: -16px;
-    }
+  .balance {
+    width: 15.5rem;
+    margin: -16px;
+  }
 
-    .balance p {
-        font-size: 14px;
-    }
+  .balance p {
+    font-size: 13px;
+  }
 
-    .balance h3 {
-        font-size: 14px;
-    }
+  .balance h3 {
+    font-size: 13px;
+  }
 
-    .balance .amount {
-        width: 14rem;
-    }
+  .balance .amount {
+    width: 15rem;
+  }
 
-    .addBtn {
-        margin-top: 33px;
-    }
+  .addBtn {
+    margin-top: 33px;
+  }
 
-    .incomeSection , .expenseSection {
-        width: 6rem;
-    }
+  .incomeSection,
+  .expenseSection {
+    width: 7rem;
+  }
 
-    .incomeSection img , .expenseSection img {
-        width: 12px;
-    }
-
-   
+  .incomeSection img,
+  .expenseSection img {
+    width: 12px;
+  }
 }

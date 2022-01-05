@@ -3,13 +3,10 @@ import React, { useState } from "react";
 // style
 import styles from "./TransActionsForms.module.css";
 
-
+// toast
 import { notify } from "./toastify/toast";
 
 const TransActionsForms = ({ transActions, setTransActions }) => {
-  // const [date, setDate] = useState("");
-  // date of day
-  // const utc = new Date().toJSON().slice(0,10).replace(/-/g,'-').toString();
   const [inputData, setInputData] = useState({
     desc: "",
     amount: 0,
@@ -20,24 +17,23 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
     setInputData({ ...inputData, [event.target.name]: event.target.value });
   };
 
-  // const dateHandler = (event) => {
-  //   setDate(date === null ? utc : event.target.value)
-  // }
-
   const submitHandler = (event) => {
     event.preventDefault();
-    if(inputData.desc && inputData.amount ) {
-      notify("success", "good")
-      setTransActions([...transActions, inputData ]);
+    if (inputData.desc && inputData.amount) {
+      notify("success", "Successfully added");
+      setTransActions([...transActions, inputData]);
     } else {
-      notify("error", "bad")
+      notify("error", "Wrong Data!");
     }
     setInputData({ desc: "", amount: 0, type: "expense" });
   };
-  
-  // console.log(typeof(utc))
+
   return (
-    <form className={styles.container} onSubmit={submitHandler}>
+    <form
+      className={styles.container}
+      onSubmit={submitHandler}
+      autoComplete="off"
+    >
       <div className={styles.inputForm}>
         <label className={styles.label}>Text</label>
         <input
@@ -46,7 +42,6 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
           value={inputData.desc}
           className={styles.input}
           onChange={formHandler}
-          
         />
       </div>
       <div className={styles.inputForm}>
@@ -57,7 +52,6 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
           value={inputData.amount}
           className={styles.input}
           onChange={formHandler}
-          
         />
       </div>
       <div className={styles.radioForm}>
@@ -68,9 +62,8 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
             value="expense"
             checked={inputData.type === "expense"}
             onChange={formHandler}
-            
           />
-          <label>Expense</label>
+          <label htmlFor="expense">Expense</label>
         </div>
         <div className={styles.radio}>
           <input
@@ -79,15 +72,13 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
             value="income"
             checked={inputData.type === "income"}
             onChange={formHandler}
-            
           />
-          <label>Income</label>
+          <label htmlFor="income">Income</label>
         </div>
       </div>
-      {/* <div className={styles.date}>
-          <input type="date" name="date" value={inputData.date} onChange={formHandler}  />
-      </div> */}
-      <button className={styles.subBtn} type="submit">Add</button>
+      <button className={styles.subBtn} type="submit">
+        Add
+      </button>
     </form>
   );
 };

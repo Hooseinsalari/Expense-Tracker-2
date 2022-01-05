@@ -1,136 +1,131 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .main {
-    margin-right: 60px;
+  margin-right: 60px;
 }
 
-.container, .close {
-    background-color: #020826;
-    width: 16rem;
-    height: 100%;
-    color: aliceblue;
-    border-radius: 0 20px 0 0;
-    /* margin: 10px 20px; */
-    /* border-radius: 20px; */
-    transition: 0.5s;
-    position: fixed;
-    overflow-y: scroll;
-    align-items: flex-start;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    margin-right: 20px;
+.container,
+.close {
+  background-color: #020826;
+  width: 16rem;
+  height: 100%;
+  color: aliceblue;
+  border-radius: 0 20px 0 0;
+  transition: 0.5s;
+  position: fixed;
+  overflow-y: scroll;
+  align-items: flex-start;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  margin-right: 20px;
 }
 
 .container::-webkit-scrollbar,
 .close::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .close {
-    width: 3rem;
+  width: 3rem;
 }
 
 .navHead {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .headNameClose {
-    display: none;
+  display: none;
 }
 
 .navHead .menu {
-    width: 22px;
-    /* margin-left: 40px; */
+  width: 22px;
 }
 
 .navLinks {
-    /* margin: 40px  0 50px; */
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
-.openLink , .closeLink {
-    display: flex;
-    align-items: center;
-    margin: 10px 2px;
-    cursor: pointer;
-    list-style-type: none;
-    transition: 0.5s;
-    padding: 10px;
+.openLink,
+.closeLink {
+  display: flex;
+  align-items: center;
+  margin: 10px 2px;
+  cursor: pointer;
+  list-style-type: none;
+  transition: 0.5s;
+  padding: 10px;
 }
 
 .openLink a {
-    text-decoration: none;
-    color: white;
-    margin-left: 14px;
+  text-decoration: none;
+  color: white;
+  margin-left: 14px;
 }
 
 .openLink .imgLink {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .closeLink a {
-    display: none;
+  display: none;
 }
 
 .closeLink .imgLink {
-    display: flex;
+  display: flex;
 }
 
-.openLink img , .closeLink img {
-    width: 22px;
+.openLink img,
+.closeLink img {
+  width: 22px;
 }
 
-.navLinks li:hover , .navFooter:hover , .closeLink:hover {
-    background-color: rgb(27, 130, 219);
-    border-radius: 20px;
-    color: black;
+.navLinks li:hover,
+.navFooter:hover,
+.closeLink:hover {
+  background-color: rgb(27, 130, 219);
+  border-radius: 20px;
+  color: black;
 }
 
 .navFooter {
-    display: flex;
-    align-items: center;
-    margin: 10px 2px;
-    cursor: pointer;
-    list-style-type: none;
-    transition: 0.5s;
-    padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px 2px;
+  cursor: pointer;
+  list-style-type: none;
+  transition: 0.5s;
+  padding: 10px;
 }
 
 .navFooter a {
-    text-decoration: none;
-    color: white;
-    margin-left: 14px;
+  text-decoration: none;
+  color: white;
+  margin-left: 14px;
 }
 
 .navFooter img {
-    width: 22px;
+  width: 22px;
 }
 
-
 @media screen and (max-width: 380px) {
-    .close {
-        width: 2.5rem;
-    }
+  .close {
+    width: 2.5rem;
+  }
 
-    .closeLink {
-        margin: 10px 0;
-    }
+  .closeLink {
+    margin: 10px 0;
+  }
 
-    .closeLink img {
-        width: 20px;
-    }
-
-    /* .close .navHead .menu {
-        margin-right: 10px;
-    } */
+  .closeLink img {
+    width: 20px;
+  }
 }

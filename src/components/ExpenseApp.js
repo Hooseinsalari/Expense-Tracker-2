@@ -12,9 +12,6 @@ import styles from "./ExpenseApp.module.css";
 import arrowDown from "../svg/arrow-down.svg";
 import arrowUp from "../svg/arrow-up.svg";
 
-
-
-
 const ExpenseApp = () => {
   const [expense, setExpense] = useState(0);
   const [income, setIncome] = useState(0);
@@ -77,13 +74,13 @@ const ExpenseApp = () => {
             <div className={styles.incomeSection}>
               <img src={arrowUp} alt="logo" />
               <p>
-                Income: <span>${income}</span>
+                Income <span>${income}</span>
               </p>
             </div>
             <div className={styles.expenseSection}>
               <img src={arrowDown} alt="logo" />
               <p>
-                Expense: <span>${expense}</span>
+                Expense <span>${expense}</span>
               </p>
             </div>
           </div>
@@ -101,9 +98,9 @@ const ExpenseApp = () => {
         </div>
       </div>
       <div className={styles.chart}>
-          {
-            transActions.length ? <Chart income={income} expense={expense} /> : null
-          }
+        {transActions.length ? (
+          <Chart income={income} expense={expense} />
+        ) : null}
       </div>
       <div className={styles.transComponent}>
         <TransActionsComponent
@@ -112,7 +109,6 @@ const ExpenseApp = () => {
           setTransActions={setTransActions}
         />
       </div>
-      
     </>
   );
 };

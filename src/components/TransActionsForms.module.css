@@ -1,61 +1,67 @@
 .container {
-    /* background-color: #dfe4f6; */
-    background: rgb(169,188,208);
-    background: linear-gradient(125deg, rgba(169,188,208,1) 12%, rgba(146,190,218,1) 48%, rgba(89,165,216,1) 82%);
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 25px;
-    color: black;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background: rgb(169, 188, 208);
+  background: linear-gradient(
+    125deg,
+    rgba(169, 188, 208, 1) 12%,
+    rgba(146, 190, 218, 1) 48%,
+    rgba(89, 165, 216, 1) 82%
+  );
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 25px;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .inputForm {
-    margin: 40px 0 10px;
-    position: relative;
+  margin: 40px 0 10px;
+  position: relative;
 }
 
 .input {
-    padding: 5px;
-    width: 18rem;
-    border-radius: 10px;
-    border: 2px solid #0a6bff;
-    outline: none;
+  padding: 5px;
+  width: 18rem;
+  border-radius: 10px;
+  border: 2px solid #0a6bff;
+  outline: none;
 }
 
 .input[type="text"],
 [type="number"] {
-    font-size: 16px;
-    height: 30px;
+  font-size: 16px;
+  height: 30px;
 }
 
 .label {
-    position: absolute;
-    bottom: 30px;
-    font-size: 18px;
+  position: absolute;
+  bottom: 30px;
+  font-size: 18px;
 }
 
 .radioForm {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 10rem;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10rem;
+  margin: auto;
 }
 
 .date {
-    margin: 10px 0;
-    font-size: 20px;
+  margin: 10px 0;
+  font-size: 20px;
 }
 
-/* CSS */
 .subBtn {
   background-color: #0a6bff;
   border-radius: 4px;
   border: 0;
-  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-shadow: rgba(1, 60, 136, 0.5) 0 -1px 3px 0 inset,
+    rgba(0, 44, 97, 0.1) 0 3px 6px 0;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -68,21 +74,13 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
-  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .subBtn:hover {
   background-color: #065dd8;
   transform: translateY(-2px);
 }
-
-/* @media (min-width: 768px) {
-  .subBtn {
-    padding: 16px 44px;
-    min-width: 150px;
-  }
-} */
-
 
 /* responsive */
 

@@ -38,10 +38,9 @@ const TransActionsComponent = ({ transActions, setTransActions }) => {
             <div key={t.id} className={styles.expenseContainer}>
               <p className={styles.transDesc}>{t.desc}</p>
               <p className={styles.transAmount}>${t.amount}</p>
-              <button onClick={() => deleteHandler(t.id)}><img src={trash} alt="logo" /></button>
-              {/* <div className={styles.tooltip}>
-                <span className={styles.tooltiptext}>{t.date}</span>
-              </div> */}
+              <button onClick={() => deleteHandler(t.id)}>
+                <img src={trash} alt="logo" />
+              </button>
             </div>
           ))
         ) : (
@@ -56,10 +55,9 @@ const TransActionsComponent = ({ transActions, setTransActions }) => {
             <div key={t.id} className={styles.incomeContainer}>
               <p className={styles.transDesc}>{t.desc}</p>
               <p className={styles.transAmount}>${t.amount}</p>
-              <button onClick={() => deleteHandler(t.id)}><img src={trash} alt="logo" /></button>
-              {/* <div className={styles.tooltip}>
-                <span className={styles.tooltiptext}>{t.date}</span>
-              </div> */}
+              <button onClick={() => deleteHandler(t.id)}>
+                <img src={trash} alt="logo" />
+              </button>
             </div>
           ))
         ) : (
