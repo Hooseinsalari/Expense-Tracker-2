@@ -63,7 +63,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className={isShow ? styles.navFooter : styles.closeLink}>
+        <div className={isShow ? styles.navFooter : styles.navFooterClose}>
           <img src={signOut} alt="logo" />
           <Link to="/">Out</Link>
         </div>

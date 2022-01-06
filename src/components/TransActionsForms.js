@@ -9,7 +9,7 @@ import { notify } from "./toastify/toast";
 const TransActionsForms = ({ transActions, setTransActions }) => {
   const [inputData, setInputData] = useState({
     desc: "",
-    amount: 0,
+    amount: "",
     type: "expense",
   });
 
@@ -25,7 +25,7 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
     } else {
       notify("error", "Wrong Data!");
     }
-    setInputData({ desc: "", amount: 0, type: "expense" });
+    setInputData({ desc: "", amount: "", type: "expense" });
   };
 
   return (
@@ -56,24 +56,28 @@ const TransActionsForms = ({ transActions, setTransActions }) => {
       </div>
       <div className={styles.radioForm}>
         <div className={styles.radio}>
-          <input
-            type="radio"
-            name="type"
-            value="expense"
-            checked={inputData.type === "expense"}
-            onChange={formHandler}
-          />
-          <label htmlFor="expense">Expense</label>
+        <label >
+            <input
+              type="radio"
+              name="type"
+              value="expense"
+              checked={inputData.type === "expense"}
+              onChange={formHandler}
+            />
+            <span>Expense</span>
+          </label>
         </div>
         <div className={styles.radio}>
-          <input
-            type="radio"
-            name="type"
-            value="income"
-            checked={inputData.type === "income"}
-            onChange={formHandler}
-          />
-          <label htmlFor="income">Income</label>
+          <label>
+            <input
+              type="radio"
+              name="type"
+              value="income"
+              checked={inputData.type === "income"}
+              onChange={formHandler}
+            />
+            <span>Income</span>
+          </label>
         </div>
       </div>
       <button className={styles.subBtn} type="submit">

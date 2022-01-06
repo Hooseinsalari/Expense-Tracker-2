@@ -8,9 +8,6 @@ import Chart from "./Chart";
 import TransActionsComponent from "./TransActionsComponent";
 import styles from "./ExpenseApp.module.css";
 
-// svg
-import arrowDown from "../svg/arrow-down.svg";
-import arrowUp from "../svg/arrow-up.svg";
 
 const ExpenseApp = () => {
   const [expense, setExpense] = useState(0);
@@ -52,39 +49,26 @@ const ExpenseApp = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.balance}>
-          <div className={styles.upSection}>
-            <div>
-              <p>
-                Balance: <span>${income - expense}</span>
-              </p>
-            </div>
-            <div className={styles.circle}>
-              <div className={styles.firstCircle}></div>
-              <div className={styles.secondCircle}></div>
-            </div>
-          </div>
-          <div className={styles.mainSection}>
-            <h3>6104</h3>
-            <h3>****</h3>
-            <h3>****</h3>
-            <h3>****</h3>
+          <div className={styles.balance}>
+            <p>
+              Balance <span>${income - expense}</span>
+            </p>
           </div>
           <div className={styles.amount}>
             <div className={styles.incomeSection}>
-              <img src={arrowUp} alt="logo" />
               <p>
-                Income <span>${income}</span>
+                Income 
               </p>
+              <span>${income}</span>
             </div>
             <div className={styles.expenseSection}>
-              <img src={arrowDown} alt="logo" />
               <p>
-                Expense <span>${expense}</span>
+                Expense 
               </p>
+              <span>${expense}</span>
             </div>
           </div>
-        </div>
+        
         <button className={styles.addBtn} onClick={showHandler}>
           {isShow ? <span>Cancel</span> : <span>Add New Transaction</span>}
         </button>

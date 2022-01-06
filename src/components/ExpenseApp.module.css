@@ -11,68 +11,19 @@
   box-sizing: border-box;
 }
 
-/* -------------- card ----------------- */
-
 .balance {
-  background: rgb(0, 7, 36);
-  background: linear-gradient(
-    140deg,
-    rgba(0, 7, 36, 1) 16%,
-    rgba(27, 23, 68, 1) 53%,
-    rgba(29, 111, 128, 1) 100%
-  );
-  width: 22rem;
-  height: 11rem;
-  margin: auto;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.balance .upSection {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.circle {
-  display: flex;
-}
-
-.balance .upSection .circle .firstCircle {
-  width: 20px;
-  height: 20px;
-  background-color: orange;
-  border-radius: 50%;
-  position: relative;
-  left: 10px;
-}
-
-.balance .upSection .circle .secondCircle {
-  width: 20px;
-  height: 20px;
-  background-color: rgb(255, 94, 0);
-  border-radius: 50%;
-}
-
-.mainSection {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.downSection {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 5px;
+    background-color: #f3f4f6;
+    color: black;
+    width: 13rem;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .balance p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .amount {
@@ -80,22 +31,35 @@
   align-items: center;
   justify-content: space-between;
   width: 21rem;
+  margin: auto;
 }
 
 .amount p {
   font-size: 18px;
-  border-radius: 10px;
 }
 
 .incomeSection,
 .expenseSection {
-  display: flex;
+  background-color: #f3f4f6;
+  color: black;
+  width: 9rem;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.incomeSection img,
-.expenseSection img {
-  width: 16px;
-  margin-right: 5px;
+.incomeSection p , .expenseSection p {
+    margin-bottom: 5px;
+}
+
+.incomeSection span {
+    color: green;
+    font-weight: bold;
+}
+
+.expenseSection span {
+    color: #dc2626;
+    font-weight: bold;
 }
 
 .addBtn {
@@ -162,32 +126,15 @@
     width: 20rem;
   }
 
-  .balance {
-    width: 17rem;
+  .amount {
+      width: 18rem;
   }
 
-  .balance p {
-    font-size: 16px;
-  }
+    .incomeSection,
+    .expenseSection {
+        width: 8rem;
+    }
 
-  .balance h3 {
-    font-size: 17px;
-  }
-
-  .balance .amount {
-    width: 16rem;
-  }
-
-  .incomeSection,
-  .expenseSection {
-    width: 7rem;
-  }
-
-  .incomeSection img,
-  .expenseSection img {
-    width: 13px;
-    margin-right: 2px;
-  }
 }
 
 @media (max-width: 380px) {
@@ -197,31 +144,13 @@
     width: 17rem;
   }
 
-  .balance {
+  .amount {
     width: 15rem;
-  }
-
-  .balance p {
-    font-size: 14px;
-  }
-
-  .balance h3 {
-    font-size: 14px;
-  }
-
-  .balance .amount {
-    width: 14rem;
-  }
+}
 
   .incomeSection,
   .expenseSection {
-    width: 6rem;
-  }
-
-  .incomeSection img,
-  .expenseSection img {
-    width: 13px;
-    margin-right: 2px;
+      width: 7rem;
   }
 }
 
@@ -231,35 +160,12 @@
   .transComponent {
     width: 16rem;
   }
-
-  .balance {
-    width: 15.5rem;
-    margin: -16px;
-  }
-
-  .balance p {
-    font-size: 13px;
-  }
-
-  .balance h3 {
-    font-size: 13px;
-  }
-
-  .balance .amount {
-    width: 15rem;
-  }
-
-  .addBtn {
-    margin-top: 33px;
-  }
+  .amount {
+    width: 14rem;
+}
 
   .incomeSection,
   .expenseSection {
-    width: 7rem;
-  }
-
-  .incomeSection img,
-  .expenseSection img {
-    width: 12px;
+      width: 6rem;
   }
 }

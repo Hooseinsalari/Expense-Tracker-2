@@ -5,10 +5,18 @@ import styles from "./TransActionsComponent.module.css";
 
 // svg
 import trash from "../svg/trash.svg";
+import { useEffect, useState } from "react/cjs/react.development";
 
 const TransActionsComponent = ({ transActions, setTransActions }) => {
-  const expenseType = transActions.filter((t) => t.type === "expense");
-  const incomeType = transActions.filter((t) => t.type === "income");
+  const [filteredItem, setFilteredItem] = useState([]);
+  const [search, setSearch] = useState("")
+
+  useEffect(() => {
+    setFilteredItem(transActions)
+  }, [transActions])
+  // -----------------------
+  const expenseType = filteredItem.filter((t) => t.type === "expense");
+  const incomeType = filteredItem.filter((t) => t.type === "income");
 
   // this function for remove item from local storeage
   const deleteHandler = (id) => {
@@ -33,9 +41,17 @@ const TransActionsComponent = ({ transActions, setTransActions }) => {
     <div className={styles.container}>
       <div className={styles.expContainer}>
         <h1 className={styles.expHead}>Expense</h1>
-        {expenseType.length !== 0 ? (
-          expenseType.map((t) => (
+        {transActions.length !== 0 ? (
+          transActions.map((t) => (
+            t.type === "expense" ?
             <div key={t.id} className={styles.expenseContainer}>
+              <p className={styles.transDesc}>{t.desc}</p>
+              <p className={styles.transAmount}>${t.amount}</p>
+              <button onClick={() => deleteHandler(t.id)}>
+                <img src={trash} alt="logo" />
+              </button>
+            </div> :
+            <div key={t.id} className={styles.incomeContainer}>
               <p className={styles.transDesc}>{t.desc}</p>
               <p className={styles.transAmount}>${t.amount}</p>
               <button onClick={() => deleteHandler(t.id)}>
@@ -48,7 +64,7 @@ const TransActionsComponent = ({ transActions, setTransActions }) => {
         )}
       </div>
 
-      <div className={styles.incContainer}>
+      {/* <div className={styles.incContainer}>
         <h1 className={styles.incHead}>Income</h1>
         {incomeType.length !== 0 ? (
           incomeType.map((t) => (
@@ -63,7 +79,9 @@ const TransActionsComponent = ({ transActions, setTransActions }) => {
         ) : (
           <h3 className={styles.emptyAlert}>Income is empty</h3>
         )}
-      </div>
+      </div> */}
+      {/* <input type="text" value={search} onChange={searchHandler} /> */}
+
     </div>
   );
 };
