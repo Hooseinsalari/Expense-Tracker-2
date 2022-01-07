@@ -1,11 +1,10 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 // style
 import styles from "./TransActionsComponent.module.css";
 
 // svg
 import trash from "../svg/trash.svg";
-import { useEffect, useState } from "react/cjs/react.development";
 
 const TransActionsComponent = ({ transActions, setTransActions }) => {
   const [filteredItem, setFilteredItem] = useState(transActions);
@@ -29,9 +28,6 @@ const TransActionsComponent = ({ transActions, setTransActions }) => {
   useEffect(() => {
     filterTransactions(searchItem)
   }, [transActions])
-
-  const expenseType = filteredItem.filter((t) => t.type === "expense");
-  const incomeType = filteredItem.filter((t) => t.type === "income");
 
   // this function for remove item from local storeage
   const deleteHandler = (id) => {
