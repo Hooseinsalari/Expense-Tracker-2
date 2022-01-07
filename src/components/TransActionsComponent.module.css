@@ -3,9 +3,38 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column-reverse;
+  flex-direction: column;
   margin-bottom: 30px;
   transition: 0.5s;
+}
+
+.transactionsCon {
+  background-color: #ececec;
+  margin: 20px 0 10px;
+  width: 30rem;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.searchInput {
+  padding: 5px;
+  width: 18rem;
+  border-radius: 10px;
+  border: 2px solid #0a6bff;
+  outline: none;
+}
+
+.searchInput[type="text"],
+[type="number"] {
+  font-size: 18px;
+  height: 40px;
 }
 
 .expenseContainer {
@@ -17,8 +46,8 @@
   border-radius: 10px;
   background-color: #fff;
   width: 27rem;
-  border-right: 4px solid red;
-  border-left: 4px solid red;
+  border-right: 4px solid #dc2626;
+  border-left: 4px solid #dc2626;
 }
 
 .incomeContainer {
@@ -42,32 +71,32 @@
   text-align: left;
 }
 
-.incContainer,
-.expContainer {
-  background-color: #ececec;
-  margin: 20px 0 10px;
-  width: 30rem;
-  border-radius: 10px;
-  padding: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.titleContainer {
+    display: flex;
+  justify-content: center;
 }
 
-.expHead,
-.incHead {
+.title {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.title:after, 
+.title:before {
+  content: '';
+  border-bottom: 2px solid green;
+  order: 2;
+  width: 50%;
+}
+.title:after {
+  margin-left: auto;
+  margin-top: -2px;
+  border-color: #dc2626;
+}
+
+.emptyAlert , .searchError {
   text-align: center;
-  margin-bottom: 10px;
-}
-
-.incHead {
-  text-decoration: solid green underline;
-}
-
-.expHead {
-  text-decoration: solid red underline;
-}
-
-.emptyAlert {
-  text-align: center;
+  margin: 20px auto;
 }
 
 button {
@@ -83,8 +112,7 @@ img {
 /* responsive */
 
 @media (max-width: 587px) {
-  .expContainer,
-  .incContainer {
+  .transactionsCon {
     width: 25rem;
   }
 
@@ -95,8 +123,7 @@ img {
 }
 
 @media (max-width: 465px) {
-  .expContainer,
-  .incContainer {
+  .transactionsCon {
     width: 20rem;
   }
 
@@ -104,11 +131,14 @@ img {
   .incomeContainer {
     width: 17rem;
   }
+
+  .searchInput {
+    width: 17rem;
+  }
 }
 
 @media (max-width: 380px) {
-  .expContainer,
-  .incContainer {
+  .transactionsCon {
     width: 17rem;
   }
 
@@ -116,16 +146,23 @@ img {
   .incomeContainer {
     width: 14rem;
   }
+
+  .searchInput {
+    width: 15rem;
+  }
 }
 
 @media (max-width: 330px) {
-  .expContainer,
-  .incContainer {
+  .transactionsCon {
     width: 16rem;
   }
 
   .expenseContainer,
   .incomeContainer {
     width: 15rem;
+  }
+
+  .searchInput {
+    width: 14rem;
   }
 }
